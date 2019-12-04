@@ -8,6 +8,8 @@ jobs:
       - name: Publish to Docker Repository
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: github.com/PayU/common-docker-images/dante-socks:latest
+          name: payu/common-docker-images/dante-socks:latest
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: docker.pkg.github.com
+
